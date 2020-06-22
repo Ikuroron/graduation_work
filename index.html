@@ -6,94 +6,71 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
   <script src="./js/app.js" defer></script>
 </head>
 <body>
+
+  <header>
+    <!-- ここからハンバーガーメニュー -->
+    <span class="nav_toggle">
+      <i></i>
+      <i></i>
+      <i></i>
+    </span>
+  
+    <div class="nav_menu">
+      <nav class="nav">
+        <p>Top</p>
+        <p>Portfolio</p>
+        <p>Training</p>
+      </nav>
+    </div>
+  </header>
 
   <!-- ここからトップ -->
   <div class="top">
     <div class="video-wrap">
       <p>NexSeed Okinawa</p>
+      <div class="top-click" id="click">
+        <span>Click</span>
+      </div>
       <video src="./img/Quik_2020-06-21_20-36-39.mp4" id="movie" loop="">
         <img src="http://webcreatorbox.com/sample/images/jewellery.jpg" alt="Placeholder">
       </video>
     </div>
   </div>
 
-  <!-- ここからメンバー -->
-  <div class="member">
-    <div>
-      <h1>About US</h1>
+  <!-- ここからポートフォリオ -->
+  <div class="portfolio">
+    <div class="portfolio-title">
+      <h1>Portfolio</h1>
     </div>
-    <div class="member-square-all">
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
+    <div class="portfolio-square-all">
+      <div class="portfolio-square">
+        <ul class="portfolio-text">
+          <li>入学から</li>
+          <li>2週間後の作品</li>
+          <p>『自己紹介サイト』</p>
         </ul>
       </div>
 
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
+      <div class="portfolio-square">
+        <ul class="portfolio-text">
+          <li>入学から</li>
+          <li>6週間後の作品</li>
+          <p>『花言葉占い』</p>
         </ul>
       </div>
 
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
-        </ul>
-      </div>
-
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
-        </ul>
-      </div>
-
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
-        </ul>
-      </div>
-
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
-        </ul>
-      </div>
-      
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
-        </ul>
-      </div>
-      
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
-        </ul>
-      </div>
-      
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
-        </ul>
-      </div>
-      
-      <div class="member-square">
-        <ul>
-          <li></li>
-          <p></p>
+      <div class="portfolio-square">
+        <ul class="portfolio-text">
+          <li>入学から</li>
+          <li>10週間後の作品</li>
+          <p>『Mrs. GREEN APPLE』</p>
         </ul>
       </div>
     </div>
@@ -102,22 +79,52 @@
 
   <!-- ここからトレーニング -->
   <div class="training">
-    <div class="training-square-all">
-      <div class="training-square-left"></div>
+    <div class="training-bigbox">
+      <div class="training-title">
+        <h1>Training</h1>
+      </div>
+      <div class="training-square-left">
+        <div class="training-left-text">
+          <h1>Skills</h1>
+
+          <h3>1. Typing</h3>
+          <p>e-タイピング：260～276（Sレベル）</p>
+          <br>
+          <h3>2. Programming</h3>
+          <p>HTML, CSS, JS, PHP：初心者レベル</p>
+          <br>
+          <h3>3. English</h3>
+          <p>TOEIC：500〜700点レベル</p>
+
+        </div>
+      </div>
       <div class="training-square-right">
 
-        <div class="training-square-top">
-          <div class="top-left"></div>
-          <div class="top-middle"></div>
-          <div class="top-right"></div>
+        <div class="training-right-box1">
+          <div class="training-right-text">
+            <h1>学習時間（１週間）</h1>
+            <p>Typing：5.4時間 /週</p><br>
+            <p>Programming：37.9時間 /週</p><br>
+            <p>English：5.9時間 /週</p><br><br>
+            <p>合計学習時間：49.2時間 /週</p><br>
+          </div>
         </div>
-        <div class="training-square-middle"></div>
-        <div class="training-square-bottom">
-          <div class="bottom-left"></div>
-          <div class="bottom-middle"></div>
-          <div class="bottom-right"></div>
+  
+        <div class="training-right-box2">
+          <h1>2020　April</h1>
+          <img src="./img/april.png" alt="">
         </div>
-        
+  
+        <div class="training-right-box3">
+          <h1>2020　May</h1>
+          <img src="./img/may.png" alt="">
+        </div>
+  
+        <div class="training-right-box4">
+          <h1>2020　June</h1>
+          <img src="./img/june.png" alt="">
+        </div>
+  
       </div>
     </div>
   </div>
