@@ -41,6 +41,21 @@ header {
   margin: 2rem auto;
 }
 
+.nav p::after {
+  border-bottom: solid 2px #707070;
+  bottom: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  width: 0;
+}
+.nav p:hover::after {
+  width: 100%;
+}
+
 .nav.show {
   opacity: 1;
   visibility: visible;
@@ -156,6 +171,10 @@ video {
   background-color: rgba(255, 54, 31, 0.3);
   border: solid 1rem #e50112;
   color: black;
+}
+
+.portfolio-square:hover {
+  box-shadow: 1px 1px 12px rgba(0,0,0,.65);
 }
 
 .portfolio-text {
