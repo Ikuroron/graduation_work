@@ -169,7 +169,7 @@ video {
   width: 14rem;
   height: 14rem;
   background-color: rgba(255, 54, 31, 0.3);
-  border: solid 1rem #e50112;
+  /* border: solid 1rem #e50112; */
   color: black;
 }
 
