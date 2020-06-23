@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" defer></script>
   <script src="./js/app.js" defer></script>
 </head>
@@ -24,15 +23,18 @@
   
     <div class="nav_menu">
       <nav class="nav">
-        <p>Top</p>
-        <p>Portfolio</p>
-        <p>Training</p>
+        <p><a href="index.html#top">Top</a></p>
+        <p><a href="index.html#portfolio">Portfolio</a></p>
+        <p><a href="index.html#training">Training</a></p>
       </nav>
     </div>
   </header>
 
+  <!-- ここから矢印 -->
+  <i class="arrow-up fas fa-arrow-up fa-4x"><img src="./img/up.png" style="transform: rotate(90deg);transform-origin:right top;" alt=""></i>
+
   <!-- ここからトップ -->
-  <div class="top">
+  <div class="top" id="top">
     <div class="video-wrap">
       <p>NexSeed Okinawa</p>
       <div class="top-click" id="click">
@@ -45,40 +47,53 @@
   </div>
 
   <!-- ここからポートフォリオ -->
-  <div class="portfolio">
+  <div class="portfolio" id="portfolio">
     <div class="portfolio-title">
       <h1>Portfolio</h1>
     </div>
     <div class="portfolio-square-all">
-      <div class="portfolio-square">
-        <ul class="portfolio-text">
-          <li>入学から</li>
-          <li>2週間後の作品</li>
-          <p>『自己紹介サイト』</p>
-        </ul>
+
+      <div class="portfolio-box">
+        <div class="portfolio-square back-img1">
+          <a href="https://mystifying-aryabhata-72717d.netlify.app">
+            <ul class="portfolio-text">
+              <li>入学から</li>
+              <li><span>2週間後</span>の作品</li>
+              <p>『自己紹介サイト』</p>
+            </ul>
+          </a>
+        </div>
       </div>
 
-      <div class="portfolio-square">
-        <ul class="portfolio-text">
-          <li>入学から</li>
-          <li>6週間後の作品</li>
-          <p>『花言葉占い』</p>
-        </ul>
+      <div class="portfolio-box">
+        <div class="portfolio-square back-img2">
+          <a href="https://xenodochial-kepler-07e4db.netlify.app/demo/">
+            <ul class="portfolio-text">
+              <li>入学から</li>
+              <li><span>6週間後</span>の作品</li>
+              <p>『花言葉占い』</p>
+            </ul>
+          </a>
+        </div>
       </div>
 
-      <div class="portfolio-square">
-        <ul class="portfolio-text">
-          <li>入学から</li>
-          <li>10週間後の作品</li>
-          <p>『Mrs. GREEN APPLE』</p>
-        </ul>
+      <div class="portfolio-box">
+        <div class="portfolio-square back-img3">
+          <a href="https://focused-curie-43bd82.netlify.app/main.html">
+            <ul class="portfolio-text">
+              <li>入学から</li>
+              <li><span>10週間後</span>の作品</li>
+              <p>『Mrs. GREEN APPLE』</p>
+            </ul>
+          </a>
+        </div>
       </div>
     </div>
     
   </div>
 
   <!-- ここからトレーニング -->
-  <div class="training">
+  <div class="training" id="training">
     <div class="training-bigbox">
       <div class="training-title">
         <h1>Training</h1>
@@ -87,14 +102,16 @@
         <div class="training-left-text">
           <h1>Skills</h1>
 
-          <h3>1. Typing</h3>
+          <h3><span>1. Typing　</span></h3>
           <p>e-タイピング：260～276（Sレベル）</p>
+          <p>（仕事に支障をきたさない程度）</p>
           <br>
-          <h3>2. Programming</h3>
+          <h3><span>2. Programming　</span></h3>
           <p>HTML, CSS, JS, PHP：初心者レベル</p>
           <br>
-          <h3>3. English</h3>
-          <p>TOEIC：500〜700点レベル</p>
+          <h3><span>3. English　</span></h3>
+          <p>英会話：中級レベル</p>
+          <p>（TOEIC　500〜700点相当）</p>
 
         </div>
       </div>
@@ -102,11 +119,11 @@
 
         <div class="training-right-box1">
           <div class="training-right-text">
-            <h1>学習時間（１週間）</h1>
+            <h1>学習時間（１週間あたり…）</h1>
             <p>Typing：5.4時間 /週</p><br>
             <p>Programming：37.9時間 /週</p><br>
             <p>English：5.9時間 /週</p><br><br>
-            <p>合計学習時間：49.2時間 /週</p><br>
+            <span>合計学習時間：49.2時間 /週</span><br>
           </div>
         </div>
   
@@ -128,6 +145,13 @@
       </div>
     </div>
   </div>
+
+  <!-- ここからフッター -->
+  <footer class="footer__container">
+    <p class="footer_text">
+        <small>&copy; 2020.06 Ikumi Matoba. All rights reserved.</small>
+    </p>
+  </footer>
   
 </body>
 </html>
