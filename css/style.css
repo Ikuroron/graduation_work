@@ -116,6 +116,13 @@ header {
     transition: opacity .5s, visibility .5s;
   }
 
+  .nav p {
+    font-size: .8rem;
+    margin: 1rem auto;
+    padding-bottom: .3rem;
+    position: relative;
+  }
+
   .nav_toggle {
     position: relative;
     top: 2rem;
@@ -215,6 +222,10 @@ video {
     position: absolute;
     top: 70%;
     left: 50%;
+  }
+
+  .video-wrap p {
+    font-size: 200%;
   }
 }
 
@@ -333,7 +344,13 @@ video {
 
 @media screen and (max-width: 767px) {
   .portfolio {
-    height: 160vh;
+    height: 180vh;
+  }
+
+  .portfolio-title {
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
   }
 
   .portfolio-square-all {
@@ -450,8 +467,8 @@ video {
 .training-right-box2 img,
 .training-right-box3 img,
 .training-right-box4 img {
-  width: 22rem;
-  height: 15rem;
+  width: 90%;
+  height: 85%;
 }
 
 .training-right-box1 h1 {
@@ -490,7 +507,7 @@ video {
 
 @media screen and (max-width: 767px) {
   .training {
-    height: 350vh;
+    height: 440vh;
     display: flex;
     align-items: flex-start;
   }
@@ -538,6 +555,11 @@ video {
   color: white;
 }
 
-.footer_text {
+/* .footer_text {
   margin-right: 60px;
+} */
+
+@media screen and (max-width: 767px) {
+  .footer_text {
+  }
 }
