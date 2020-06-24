@@ -15,6 +15,10 @@ header {
   z-index: 1;
 }
 
+.nav_toggle:hover {
+  cursor: pointer;
+}
+
 .nav_menu {
   width: 100%;
   display: flex;
@@ -41,7 +45,7 @@ header {
 .nav p {
   color: white;
   font-size: 1rem;
-  margin: 2rem auto;
+  margin: 1.5rem auto;
   padding-bottom: .5rem;
   position: relative;
 }
@@ -103,6 +107,25 @@ header {
   transform: translateY(-12px) rotate(45deg);
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    top: 4rem;
+    left: 80%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+  }
+
+  .nav_toggle {
+    position: relative;
+    top: 2rem;
+    left: 85%;
+    width: 1.75rem;
+    height: 1.5rem;
+    z-index: 1;
+  }
+}
+
 /* ここから矢印ボタン */
 .arrow-up {
   position: fixed;
@@ -123,12 +146,15 @@ header {
 }
 
 video {
+  width: 100%;
   display: block;
   margin: 0 0 0 auto;
   opacity: .4; 
 }
 
 .video-wrap p {
+  width: 60%;
+  text-align: center;
   font-family: serif;          
   color: #fff;
   font-size: 400%;
@@ -146,7 +172,7 @@ video {
   display: inline-block;
 }
 
-.video-wrap span {
+.top-click span {
   font-family: serif;          
   color: rgba(255, 255, 255, .2);
   font-size: 200%;
@@ -162,7 +188,7 @@ video {
   z-index: 1;
 }
 
-.video-wrap span {
+.top-click span {
   background:linear-gradient(
         to right,
         rgba(255, 255, 255, .2),
@@ -172,21 +198,29 @@ video {
   transition:background-position 0.3s;
 }
 
-.video-wrap span:hover {
+.top-click span:hover {
   background-position:0 0;
   border: 2px solid rgba(255, 255, 255, .2);
   color: white;
 }
 
-.video-wrap span:active {
+.top-click span:active {
   padding: .8rem 2.8rem;
-  transition-duration: 1s;
   color: gray;
 
 }
 
+@media screen and (max-width: 767px) {
+  .top-click span {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+  }
+}
+
 /* ここからポートフォリオ */
 .portfolio {
+  width: 100%;
   height: 35rem;
   font-weight: bold;
   border-top: solid 2rem #ec6c1f;
@@ -217,6 +251,8 @@ video {
 }
 
 .portfolio-box {
+  width: 14rem;
+  height: 14rem;
   overflow: hidden;
 }
 
@@ -246,7 +282,7 @@ video {
 .back-img2:hover,
 .back-img3:hover {
   transform: scale(1.4);	/*画像の拡大率*/
-  transition-duration: 0.3s;	/*変化に掛かる時間*/
+  transition-duration: 0.1s;	/*変化に掛かる時間*/
   cursor: pointer; /*カーソルをポインターにする*/
 }
 
@@ -293,6 +329,25 @@ video {
 .portfolio-text p {
   font-size: .9rem;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio {
+    height: 160vh;
+  }
+
+  .portfolio-square-all {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+  }
+
+  .portfolio-box {
+    margin-bottom: 2rem;
+  }
 }
 
 /* ここからトレーニング */
@@ -385,7 +440,6 @@ video {
 .training-right-box4 {
   width: 24rem;
   height: 18rem;
-  /* background-color: #c0392b; */
   background-color: #d01026;
   display: flex;
   flex-direction: column;
@@ -432,6 +486,46 @@ video {
 .training-right-box4 {
   margin-top: .5rem;
   margin-left: .5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .training {
+    height: 350vh;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .training-bigbox {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .training-title {
+    position: absolute;
+    top: 6rem;
+    left: 0rem;
+  }
+
+  .training-square-left {
+    width: 90%;
+    margin-top: 10rem;
+    margin-right: 0;
+  }
+
+  .training-square-right {
+    width: 90%;
+    margin-top: 3rem;
+  }
+
+  .training-right-box1,
+  .training-right-box2,
+  .training-right-box3,
+  .training-right-box4 {
+    width: 100%;
+    margin: 1rem 0;
+  }
 }
 
 /* ここからフッター */

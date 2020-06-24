@@ -9,6 +9,7 @@ $(function () {
 
 });
 
+
 // トップ動画再生、停止
 let movie = document.getElementById('click');
 movie.addEventListener('click', function () {
