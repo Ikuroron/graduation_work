@@ -555,10 +555,6 @@ video {
   color: white;
 }
 
-/* .footer_text {
-  margin-right: 60px;
-} */
-
 @media screen and (max-width: 767px) {
   .footer_text {
   }
