@@ -338,7 +338,7 @@ video {
 }
 
 .portfolio-text p {
-  font-size: .9rem;
+  font-size: .8rem;
   margin-top: 1rem;
 }
 
@@ -553,9 +553,4 @@ video {
   align-items: center;
   background-color: black;
   color: white;
-}
-
-@media screen and (max-width: 767px) {
-  .footer_text {
-  }
 }
